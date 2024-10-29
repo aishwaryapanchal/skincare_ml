@@ -12,6 +12,7 @@ This project is a machine learning solution built in Python. It includes data pr
   - [1. Cloning the Repository](#1-cloning-the-repository)
   - [2. Setting Up the Virtual Environment](#2-setting-up-the-virtual-environment)
   - [3. Installing Dependencies](#3-installing-dependencies)
+  - [4. Setting Up Pre-Commit Hooks](#4-setting-up-pre-commit-hooks)
 - [Usage](#usage)
 <!-- - [Project Structure](#project-structure)
 - [Contributing](#contributing)
@@ -54,12 +55,16 @@ venv\Scripts\activate
 ```
 
 ### 3. Installing Dependencies
-Once the virtual environment is activated, install the dependencies listed in `requirements.txt`.
-
+Once the virtual environment is activated, install the dependencies.
+For production dependencies only:
 ```bash
 pip install -r requirements.txt
 ```
 
+For development dependencies (including linters and test tools):
+```bash
+pip install -r requirements-dev.txt
+```
 ## Usage
 1. **Activate the virtual environment** before running the code:
    - **macOS/Linux**: `source venv/bin/activate`
@@ -73,6 +78,26 @@ pip install -r requirements.txt
 3. **Deactivate the virtual environment** when done:
    ```bash
    deactivate
+   ```
+
+### 4. Setting Up Pre-Commit Hooks
+This project uses `pre-commit` hooks to automatically check code formatting and linting before each commit.
+
+1. **Install `pre-commit`:**
+   ```bash
+   pip install pre-commit
+   ```
+
+2. **Install the Pre-Commit Hook:**
+   After installing `pre-commit`, run:
+   ```bash
+   pre-commit install
+   ```
+
+3. **Verify the Hook Setup:**
+   To test the hooks on all files, run:
+   ```bash
+   pre-commit run --all-files
    ```
 <!--
 ## Project Structure
