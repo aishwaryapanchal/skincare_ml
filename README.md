@@ -105,6 +105,9 @@ Here's an example of the project structure:
 ```
 your-repo-name/
 ├── data/                   # Dataset and raw data files
+│   ├── product_info.csv
+│   ├── reviews (all review csv go here)
+│   ├── merged (all merged data goes here)
 ├── notebooks/              # Jupyter notebooks for EDA and experiments
 ├── src/                    # Source code for the project
 │   ├── __init__.py
