@@ -14,8 +14,8 @@ This project is a machine learning solution built in Python. It includes data pr
   - [3. Installing Dependencies](#3-installing-dependencies)
   - [4. Setting Up Pre-Commit Hooks](#4-setting-up-pre-commit-hooks)
 - [Usage](#usage)
-<!-- - [Project Structure](#project-structure)
-- [Contributing](#contributing)
+- [Project Structure](#project-structure)
+<!-- - [Contributing](#contributing)
 - [License](#license) -->
 
 ## Features
@@ -99,7 +99,7 @@ This project uses `pre-commit` hooks to automatically check code formatting and 
    ```bash
    pre-commit run --all-files
    ```
-<!--
+
 ## Project Structure
 Here's an example of the project structure:
 ```
@@ -115,7 +115,7 @@ your-repo-name/
 ├── requirements.txt        # Project dependencies
 └── README.md               # Project README
 ```
-
+<!--
 ## Contributing
 Contributions are welcome! Please open an issue to discuss what you would like to contribute. For major changes, open a pull request with detailed information.
 
