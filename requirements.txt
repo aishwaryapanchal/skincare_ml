@@ -1,3 +1,4 @@
+--index-url https://download.pytorch.org/whl/cu121
 asttokens==2.4.1
 attrs==24.2.0
 backcall==0.2.0
@@ -81,3 +82,8 @@ virtualenv==20.27.1
 wcwidth==0.2.13
 webencodings==0.5.1
 yarg==0.1.9
+ipykernel==6.29.5
+torch==2.4.0+cu121
+transformers==4.43.3
+huggingface-hub==0.24.2
+pybind11==2.13.6
